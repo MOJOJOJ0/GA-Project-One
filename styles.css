@@ -1,0 +1,32 @@
+body {
+    background-color: thistle;
+}
+
+::selection{
+    color: black;
+    background: yellow;
+}
+
+#flexcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    align-content: center;
+    flex-flow: column wrap;   
+}
+
+.button{
+    padding: 70px;
+    background: lightgreen;
+    font-size: 50px;
+}
+.button:active {
+    background-color: palevioletred;
+}
+
+#reset{
+    padding: 15px;
+    margin: 15px;
+    background: darkorange
+}

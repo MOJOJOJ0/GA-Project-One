@@ -1,2 +1,2 @@
 # GA-Project-One
-General Assembly Tic Tac Toe game
+General Assembly Tic Tac Toe Game
