@@ -20,5 +20,5 @@ Planning Phase docs - <img width="660" alt="Screen Shot 2021-12-29 at 2 10 03 PM
 [ticTacToe Adobe Scan Dec 29, 2021.pdf](
 https://github.com/MOJOJOJ0/GA-Project-One/files/7790472/ticTacToe.Adobe.Scan.Dec.29.2021.pdf)
 
-#Tech used
+# Tech used
 - html/css/js and google fonts
