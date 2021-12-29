@@ -83,7 +83,7 @@ function reset() {
             document.querySelector("#message").innerText = "player " + winning + " wins!";
         }
 
-            if(clickCounter == 9 && winning == -1){
+        if(clickCounter == 9 && winning == -1){
 
             document.querySelector("#message").innerText = "DRAW";
         }
