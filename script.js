@@ -78,8 +78,8 @@ function reset() {
         if(gameBoard[0][2] == gameBoard[1][1] == gameBoard[2][0]) winning = gameBoard[1][1]; //246 p2
 
         
-        }
-            if(winning != -1){
+        
+        if(winning != -1){
             document.querySelector("#message").innerText = "player " + winning + " wins!";
         }
 
@@ -87,6 +87,7 @@ function reset() {
 
             document.querySelector("#message").innerText = "DRAW";
         }
+    }
     
 
     
