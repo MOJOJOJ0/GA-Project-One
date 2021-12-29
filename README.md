@@ -16,7 +16,6 @@ link to the game - https://admiring-colden-22a710.netlify.app/
 
 # Wireframe
 link - https://vectr.com/design/editor/92ac138f-b497-4fbb-9cd5-ed863ce996ce
-[ticTacToe Adobe Scan Dec 29, 2021.pdf]
 Planning Phase docs - <img width="660" alt="game logic for loop" src="https://user-images.githubusercontent.com/15316862/147700018-8b601426-ac36-4448-8fc1-b74f474416ce.png">
 [ticTacToe Adobe Scan Dec 29, 2021.pdf]
 (https://github.com/MOJOJOJ0/GA-Project-One/files/7790472/ticTacToe.Adobe.Scan.Dec.29.2021.pdf)
