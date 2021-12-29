@@ -75,7 +75,7 @@ function reset() {
         if(gameBoard[0][0] == gameBoard[1][1] == gameBoard[2][2]) winning = gameBoard[1][1]; //048 p1
         
 
-        if(gameBoard[0][2] == gameBoard[1][1] == gameBoard[2][0]) winning = gameBoard[1][1]; //246 p2
+        if(gameBoard[0][2] == gameBoard[1][1] == gameBoard[2][1]) winning = gameBoard[1][1]; //246 p2
 
         
         
