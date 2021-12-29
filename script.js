@@ -1,14 +1,21 @@
 
 // keep scores 
 
+let playerTurn = 1;
 
-// const gameBoard = [null, null, null, null, null, null, null, null, null];
+let winning = -1;
+
+const gameBoard = [
+    [-1, -1, -1], 
+    [-1, -1, -1], 
+    [-1, -1, -1]
+]
 // let playerOne = true;
 
 
 function reset() {
     let resetBtn = document.querySelector("#reset");
-    resetBtn.addEventListener('click', () => location.reload()) //click twice
+    resetBtn.addEventListener('click', () => location.reload()) //click twice add hover effect?
 }
     function start(){
         document.appendChild = "gold";
@@ -20,18 +27,31 @@ function reset() {
         document.querySelector("#message").innerText = message;
     }
 
-    let playerTurn = 1;
-    function changeColor(button) {
-        if(button.style.background != "") return; //so user can only choose one color throughout
-        
+
+    function changeColor(element, row, button) {
+
+        if(element.style.background != "") return; //so user can only choose one color throughout
+
+        gameBoard[row][button] = playerTurn; // each btn needs to be id'd
+
         if(playerTurn == 1){
-            button.style.background = "gold";
+
+            element.style.background = "gold";
+
             document.querySelector("#message").innerText = "blue its ur turn";
+
             playerTurn = 2;
+
         }else if (playerTurn == 2) {
-            button.style.background = "lightblue";
+
+            element.style.background = "lightblue";
+
             document.querySelector("#message").innerText = "gold its ur turn";
+
             playerTurn = 1;
         }
+
+        //for loop to check win lose conditions
+        
     } 
 

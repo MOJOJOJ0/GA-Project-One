@@ -7,24 +7,27 @@
     <title>x0x0</title>
     <!-- <link rel = "stylesheet" type = "text/css" href="styles.css" media="screen" &#129425;/> -->
     <link rel = "stylesheet" href="styles.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Astloch&display=swap');
+        </style>
 </head>
 <body onload="start();">
     <script src="script.js"></script>
     <div class="flex-container" id="flexcontainer">
-        <div>
-        <button class="button" id="btn0" type="button" onclick="changeColor(this)">&#129425;</button> 
-        <button class="button" id="btn1" type="button" onclick="changeColor(this)">&#129425;</button>
-        <button class="button" id="btn2" type="button" onclick="changeColor(this)">&#129425;</button>
+        <div class="row">
+        <button class="button" id="btn0" type="button" onclick="changeColor(this,0,0)">&#129425;</button> 
+        <button class="button" id="btn1" type="button" onclick="changeColor(this,0,1)">&#129425;</button>
+        <button class="button" id="btn2" type="button" onclick="changeColor(this,0,2)">&#129425;</button>
         </div>
-        <div>
-        <button class="button" id="btn3" type="button" onclick="changeColor(this)">&#129425;</button>
-        <button class="button" id="btn4" type="button" onclick="changeColor(this)">&#129425;</button>
-        <button class="button" id="btn5" type="button" onclick="changeColor(this)">&#129425;</button>
+        <div class="row">
+        <button class="button" id="btn3" type="button" onclick="changeColor(this,1,0)">&#129425;</button>
+        <button class="button" id="btn4" type="button" onclick="changeColor(this,1,1)">&#129425;</button>
+        <button class="button" id="btn5" type="button" onclick="changeColor(this,1,2)">&#129425;</button>
         </div>
-        <div>
-        <button class="button" id="btn6" type="button" onclick="changeColor(this)">&#129425;</button>
-        <button class="button" id="btn7" type="button" onclick="changeColor(this)">&#129425;</button>
-        <button class="button" id="btn8" type="button" onclick="changeColor(this)">&#129425;</button>
+        <div class="row">
+        <button class="button" id="btn6" type="button" onclick="changeColor(this,2,0)">&#129425;</button>
+        <button class="button" id="btn7" type="button" onclick="changeColor(this,2,1)">&#129425;</button>
+        <button class="button" id="btn8" type="button" onclick="changeColor(this,2,2)">&#129425;</button>
         </div>
         <div>
         <button class="reset-button" id="reset" type="button" onclick="reset()">RESET</button>
