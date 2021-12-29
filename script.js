@@ -18,7 +18,7 @@ function reset() {
 
     let resetBtn = document.querySelector("#reset");
 
-    resetBtn.addEventListener('click', () => location.reload()) //click twice add hover effect?
+    resetBtn.addEventListener('click', () => location.reload())
 }
     function start(){
 
@@ -37,11 +37,11 @@ function reset() {
 
         if(element.style.background != "") return; //so user can only choose one color throughout
         
-        if(winning != -1) return; //to stop
+        if(winning != -1) return; 
 
         clickCounter++;
 
-        gameBoard[row][button] = playerTurn; // each btn needs to be id'd
+        gameBoard[row][button] = playerTurn; //gameboard row column
 
         if(playerTurn == 1){
 
@@ -63,31 +63,30 @@ function reset() {
         //for loop to check win lose conditions
         for(let i = 0; i < 3; i++) {
             //row check
-            if(gameBoard[i][0] == gameBoard[i][1] && gameBoard[i][1] == gameBoard[i][2]) winning = gameBoard[i][0]; //player 2?
-            // if(gameBoard[i][3] == gameBoard[i][4] && gameBoard[i][4] == gameBoard[i][5]) winning = gameBoard[i][0];//me
-            // if(gameBoard[i][6] == gameBoard[i][7] && gameBoard[i][7] == gameBoard[i][8]) winning = gameBoard[i][0];//me
-            //if(gameBoard[i][0] == gameBoard[i][1] && gameBoard[i][1] == gameBoard[i][2]) winning = gameBoard[i][1]; //player 1?
+            if(gameBoard[i][0] == gameBoard[i][1] && gameBoard[i][1] == gameBoard[i][2]) winning = gameBoard[i][0]; 
 
 
             //column check
             if(gameBoard[0][i] == gameBoard[1][i] && gameBoard[1][i] == gameBoard[2][i]) winning = gameBoard[0][i];
-            // if(gameBoard[0][i] == gameBoard[3][i] && gameBoard[3][i] == gameBoard[6][i]) winning = gameBoard[i][0];//me
+            
         }
 
         //diagonal check
-        if(gameBoard[0][0] == gameBoard[1][1] == gameBoard[2][2]) winning = gameBoard[1][1]; //048 only g wrks,
+            if(gameBoard[0][0] == gameBoard[1][1] == gameBoard[2][2]) winning = gameBoard[1][1]; //048 p1
+        
 
-        if(gameBoard[0][2] == gameBoard[1][1] == gameBoard[2][1]) winning = gameBoard[1][1]; //246 only blue works, 11 b?
+            if(gameBoard[0][2] == gameBoard[1][1] == gameBoard[2][1]) winning = gameBoard[1][1]; //246 p2
 
-        //if(gameBoard[0][0] == gameBoard[1][1] == gameBoard[2][2]) winning = gameBoard[1][0]; //048 blue?
-
-        if(winning != -1){
+        
+        }
+            if(winning != -1){
             document.querySelector("#message").innerText = "player " + winning + " wins!";
         }
 
-        if(clickCounter == 9 && winning == -1){
+            if(clickCounter == 9 && winning == -1){
 
             document.querySelector("#message").innerText = "DRAW";
         }
-    } 
+    
 
+    
