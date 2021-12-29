@@ -1,6 +1,4 @@
-
-// keep scores 
-
+//
 let playerTurn = 1;
 
 let winning = -1;
@@ -13,7 +11,7 @@ const gameBoard = [
     [-1, -1, -1], 
     [-1, -1, -1]
 ]
-// let playerOne = true;
+
 
 
 function reset() {
