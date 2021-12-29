@@ -12,7 +12,7 @@ link to the game - https://admiring-colden-22a710.netlify.app/
 - second user looks at the message, is prompted and is aware that they have a different color now
 - second user clicks another random box/button in the grid
 - until one of the users gets a winning combination game message will either show a winner or a draw if no winner
-- game ends, user has the ability to clik the reset button
+- game ends, user has the ability to click the reset button
 
 # Wireframe
 link - https://vectr.com/design/editor/92ac138f-b497-4fbb-9cd5-ed863ce996ce
